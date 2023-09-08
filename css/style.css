@@ -1,0 +1,207 @@
+
+
+h1 {
+  font-size: 3.25rem;
+  color: var(--color-blue-light);
+}
+
+
+
+.main-container {
+  margin: 0 auto;
+  height: 100vh;
+  
+  max-width: 1200px;
+}
+
+.navbar, .footer {
+  
+  padding: 1.5rem;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: flex-end
+  
+}
+
+.navbar a {
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  color: var(--color-blue-light);
+  
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.prompt-cursor {
+  
+  display: block;
+  height: 50px;
+  width: 16px;
+  margin-left: 0.75rem;
+  animation: blink 1200ms linear infinite;
+  
+}
+
+.terminal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 0;
+    
+    
+}
+
+.terminal {
+  height: 70vh;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+  width: 80%;
+  
+}
+
+.terminal__bar {
+  
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 0.5rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: linear-gradient(#c7c7c6 0%,#dadada 100%);
+  
+}
+
+.terminal__icon {
+  
+  width: 24px;
+  
+  
+}
+.terminal__bar-itens {
+  
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.bar__buttons {
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.bar__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 0.25rem;
+    font-size: 0.75rem;
+    height: 16px;
+    width: 16px;
+    background: linear-gradient(#c7c7c6 0%,#dadada 100%);
+    border: none;
+    
+}
+.bar__button:hover {
+    cursor: pointer;
+}
+.bar__button:focus {
+    outline: none;
+}
+.bar__button--exit {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+    background-clip: padding-box;
+}
+
+.bar__user {
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 16px;
+    font-weight: 700;
+    
+}
+
+.terminal__body {
+    background: rgba(4, 0, 3, 0.9);
+    font-family: 'Ubuntu Mono';
+    height: calc(100% - 30px);
+    padding-top: 2px;
+    margin-top: -1px;
+}
+
+.terminal__output {
+  color: inherit;
+ 
+}
+
+.terminal-line {
+  display: flex;
+  
+  
+  align-items: center;
+  gap: 0;
+  text-align: center;
+  
+}
+
+.terminal-line pre {
+  font-size: 10px;
+  
+  
+}
+
+.terminal__prompt {
+  display: flex;
+}
+.terminal__prompt--user {
+  color: #7eda28;
+}
+.terminal__prompt--location {
+  color: #4878c0;
+}
+.terminal__prompt--dolar {
+  color: #dddddd;
+}
+.terminal__prompt--cursor {
+  display: block;
+  height: 17px;
+  width: 8px;
+  margin-left: 0.563rem;
+  margin-top: 4px;
+  animation: blink 1200ms linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    background: #ffffff;
+  }
+  49% {
+    background: #ffffff;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .terminal {
+    max-height: 90%;
+    width: 90%;
+  }
+}
