@@ -3,135 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio baseado em um terminal">
+    <meta name="author" content="Genesis Lima">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="icon" type="image/x-icon" href="/assets/icons8-linux-terminal-48.png">
+    <link rel="icon" type="image/x-icon" href="/assets/icons8-linux-server-60.png">
     <title>Genesis Lima</title>
 </head>
 <body>
   <div class="main-container">
-    <header>
-        <nav class="navbar">
-            <ul class="navbar__links">
-              <li><a href="#projects">Projetos</a></li>
-              <li><a href="#footer">Contato</a></li>
-
-            </ul>
+    <header >
+      <div class="terminal-bar">
+        <div class="terminal-body">
+          <img src="./assets/icons8-linux-server-60.png" class="terminal-icon">
+          <div>Terminal - visitante@g-101.github.io:~</div>
+          <div class="bar-buttons">
+            <button class="bar-button">&#x0320;</button>
+            <button class="bar-button">&#9723;</button>
+            <button class="bar-button" class="bar-button--exit" focus>&#10005;</button>
+          </div>
+        </div>
+        <nav >
+          <ul class="menu">
+            <li>
+              <a href="/projetos" target="_blank">Projetos</a>
+            </li>
+            <li>
+              <a href="/contato" target="_blank">Contato</a>
+            </li>
+            <li>
+              <a href="/curriculo" target="_blank">Curriculo</a>
+            </li>
+          </ul>
         </nav>
-       
+      </div>
+    
     </header>
     
-    <!-- Terminal -->
-    <main class="terminal-container">
-      <div class="terminal">
-        
-        <section class="terminal__bar">
-          <img src="./assets/icons8-linux-terminal-48.png " class="terminal__icon">
-          <span class="terminal__bar-itens">
-            <p class="bar__user">Terminal - visitante@debian: ~</p>
-            <div class="bar__buttons">
-              <button class="bar__button">&#x0320;</button>
-              <button class="bar__button">&#9723;</button>
-              <button class="bar__button" class="bar__button--exit">&#10005;</button>
-            </div>
-          </span>
-        </section>
-        
-        <section class="terminal__body">
-            
-          <div class="terminal__output">
-              <div class="terminal-line">
-                
-                
-              </div>
-          </div>  
-          <div class="terminal-prompt-main">
-            
-            <div class="terminal__prompt">
-              <span class="terminal__prompt--user">visitante@debian:</span>
-              <span class="terminal__prompt--location">~</span>
-              <span class="terminal__prompt--bling">$</span>
-              <span> sobre</span>
-            </div>
-            
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula vehicula leo sed porta. 
-              Nulla molestie, libero nec egestas consectetur, massa ipsum placerat eros, 
-              sed sodales libero diam ac turpis. 
-              
-            </p>
-            
-          </div>
-
-          <div class="terminal-prompt-main">
-            
-            <div class="terminal__prompt">
-              <span class="terminal__prompt--user">visitante@debian:</span>
-              <span class="terminal__prompt--location">~</span>
-              <span class="terminal__prompt--dolar">$</span>
-              <span> contato</span>
-            </div>
-            
-            <a href="https://www.linkedin.com/in/genesislima101/" target="_blank">
-              linkedin
-            
-            </a>
-            <a href="https://github.com/g-101" target="_blank">
-              github
-            
-            </a>
-          </div>
-          <div class="terminal-prompt-main">
-            
-            <div class="terminal__prompt">
-              <span class="terminal__prompt--user">visitante@debian:</span>
-              <span class="terminal__prompt--location">~</span>
-              <span class="terminal__prompt--bling">$</span>
-              <span> curriculo</span>
-            </div>
-            
-            <a href="https://g-101.github.io/elas-na-tech-2023/curriculo" target="_blank">
-              pagina do curriculo
-            
-            </a>
-            
-          </div>
-          <div class="terminal-prompt-main">
-            
-            <div class="terminal__prompt">
-              <span class="terminal__prompt--user">visitante@debian:</span>
-              <span class="terminal__prompt--location">~</span>
-              <span class="terminal__prompt--bling">$</span>
-              <span>sudo -l</span>
-            </div>
-            
-            <p>
-              O usuário visitante não tem permissão para executar o sudo em debian. 
-              Este incidente será relatado.
-              
-            </p>
-            
-          </div>
+    <main>
+      <section>
+        <pre>
+          ██████╗ ███████╗███╗   ██╗███████╗███████╗██╗███████╗
+          ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔════╝██║██╔════╝
+          ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ███████╗██║███████╗
+          ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ╚════██║██║╚════██║
+          ╚██████╔╝███████╗██║ ╚████║███████╗███████║██║███████║
+          ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝╚══════╝
           
-          <div class="terminal__prompt">
-            <span class="terminal__prompt--user">visitante@debian:</span>
-            <span class="terminal__prompt--location">~</span>
-            <span class="terminal__prompt--bling">$</span>
-            <span class="terminal__prompt--cursor"></span>
-          </div>
-        </section>
-      </div>
+        </pre>
+        <div class="title">
+          <h1>Segurança da Informação - Infosec</h1>
+          <p>"the <span class="highlight">quieter</span> you become, the more you able to <span class="highlight">hear</span>"</p>
+        </div>
+      </section>
+      <!-- Terminal -->
+      <div class="terminal" >
+        <div class="terminal-text" id="typedText"></div>
+        <!-- <b class="cursor" id="cursor">█</b> -->
+      </div> 
       <!-- Fim do Terminal -->
-    </main>
     
+    </main>
+    <footer>
+      <div class="footer">
+        <span>Feito por Genesis Lima - g101</span> || <a href="https://github.com/g-101"  target="_blank">Github</a> || <a href="https://www.linkedin.com/in/genesislima101/"  target="_blank">Linkendin</a>
+      </div>
+    </footer>  
+  </div>
     
   
-  </div>
+ 
+  
+  
+  
+
 </body>
 </html>
