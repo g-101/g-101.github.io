@@ -1,0 +1,62 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.projects__card {
+    display: flex;
+    justify-content: space-evenly;
+    height: 45vh;
+    border: 2px #fff solid;
+    width: 80%;
+    gap: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects__card__resume {
+    background: url("../assets/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+}
+.projects__card__content {
+    width: 70%;
+    height: 100%;
+    padding: 24px;
+}
+
+.projects__card__content div p,
+.projects__card__tagbox,
+.projects__card__tagbox span,
+.projects__card__content a {
+    margin-top: 16px;
+}
+
+.projects__card__tagbox {
+    display: flex;
+    gap: 8px;
+}
+
+.projects__card__tagbox span {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 2px #09b4df solid;
+}
+
+.projects__card__content a {
+    display: inline-block;
+    background: var(--color-blue-neutral);
+    padding: 5px 10px;
+
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+hr {
+    color: #09b4df;
+}

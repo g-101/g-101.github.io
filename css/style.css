@@ -85,8 +85,6 @@ b {
 
 .cursor:before {
     content: "█";
-    /* text-decoration: blink;
-    animation: blinker 1s linear infinite; */
 }
 
 .cursor {
