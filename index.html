@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio baseado em um terminal">
-    <meta name="author" content="Genesis Lima">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="icon" type="image/x-icon" href="/assets/icons8-linux-server-60.png">
-    <title>Genesis Lima</title>
-</head>
-<body>
-  <div class="main-container">
-    <header >
-      <div class="terminal-bar">
-        <div class="terminal-body">
-          <img src="./assets/icons8-linux-server-60.png" class="terminal-icon">
-          <div>Terminal - visitante@g-101.github.io:~</div>
-          <div class="bar-buttons">
-            <button class="bar-button">&#x0320;</button>
-            <button class="bar-button">&#9723;</button>
-            <button class="bar-button" class="bar-button--exit" focus>&#10005;</button>
-          </div>
-        </div>
-        <nav >
-          <ul class="menu">
-            <li>
-              <a href="/projetos" target="_blank">Projetos</a>
-            </li>
-            <li>
-              <a href="/contato" target="_blank">Contato</a>
-            </li>
-            <li>
-              <a href="/curriculo" target="_blank">Curriculo</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    
-    </header>
-    
-    <main>
-      <section>
-        <pre>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfolio baseado em um terminal" />
+        <meta name="author" content="Genesis Lima" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="icon" type="image/x-icon" href="/assets/icons8-linux-server-60.png" />
+        <title>Genesis Lima</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <div class="terminal-bar">
+                    <div class="terminal-body">
+                        <img src="./assets/icons8-linux-server-60.png" class="terminal-icon" />
+                        <div>Terminal - visitante@g-101.github.io:~</div>
+                        <div class="bar-buttons">
+                            <button class="bar-button">&#x0320;</button>
+                            <button class="bar-button">&#9723;</button>
+                            <button class="bar-button" class="bar-button--exit" focus>
+                                &#10005;
+                            </button>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="/projetos" target="_blank">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="/contato" target="_blank">Contato</a>
+                            </li>
+                            <li>
+                                <a href="/curriculo" target="_blank">Curriculo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <section>
+                    <pre>
           ██████╗ ███████╗███╗   ██╗███████╗███████╗██╗███████╗
           ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔════╝██║██╔════╝
           ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ███████╗██║███████╗
@@ -53,32 +57,33 @@
           ╚██████╔╝███████╗██║ ╚████║███████╗███████║██║███████║
           ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝╚══════╝
           
-        </pre>
-        <div class="title">
-          <h1>Segurança da Informação - Infosec</h1>
-          <p>"the <span class="highlight">quieter</span> you become, the more you able to <span class="highlight">hear</span>"</p>
+        </pre
+                    >
+                    <div class="title">
+                        <h1>Segurança da Informação - Infosec</h1>
+                        <p>
+                            "the <span class="highlight">quieter</span> you become, the more you
+                            able to <span class="highlight">hear</span>"
+                        </p>
+                    </div>
+                </section>
+                <!-- Terminal -->
+                <div class="terminal">
+                    <div class="terminal-text" id="typedText"></div>
+                </div>
+                <!-- Fim do Terminal -->
+            </main>
+            <footer>
+                <div class="footer">
+                    <span>Feito por Genesis Lima - g101</span> ||
+                    <a href="https://github.com/g-101" target="_blank">Github</a> ||
+                    <a href="https://www.linkedin.com/in/genesislima101/" target="_blank"
+                        >Linkendin</a
+                    >
+                </div>
+            </footer>
         </div>
-      </section>
-      <!-- Terminal -->
-      <div class="terminal" >
-        <div class="terminal-text" id="typedText"></div>
-        <!-- <b class="cursor" id="cursor">█</b> -->
-      </div> 
-      <!-- Fim do Terminal -->
-    
-    </main>
-    <footer>
-      <div class="footer">
-        <span>Feito por Genesis Lima - g101</span> || <a href="https://github.com/g-101"  target="_blank">Github</a> || <a href="https://www.linkedin.com/in/genesislima101/"  target="_blank">Linkendin</a>
-      </div>
-    </footer>  
-  </div>
-    
-  
- 
-  
-  
-  
 
-</body>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

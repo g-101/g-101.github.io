@@ -1,104 +1,121 @@
 .main-container {
-  padding: 15px 20px;
-  min-width: 350px;
-  
+    padding: 15px 20px;
+    min-width: 350px;
 }
 
 .terminal-bar {
-  height: 55px;
-  
-  border: 1px solid;
-  padding: 0 0.5rem;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom: none;
-  
+    height: 55px;
+
+    border: 1px solid;
+    padding: 0 0.5rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: none;
 }
 
 .terminal-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .terminal-icon {
-  width: 24px;
+    width: 24px;
 }
 
 .bar-buttons {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .bar-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
-  margin-right: 0.25rem;
-  font-size: 0.65rem;
-  height: 16px;
-  width: 16px;
-  border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-right: 0.25rem;
+    font-size: 0.65rem;
+    height: 16px;
+    width: 16px;
+    border-radius: 40%;
 }
 .bar-button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .bar-button:focus {
-  
-  outline: none;
+    outline: none;
 }
 .bar-button--exit {
-  
-  background-clip: padding-box;
+    background-clip: padding-box;
 }
 
 .menu {
-  font-size: 0.875rem;
-  position: relative;
-  border: none;
-  top: 8px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  width: 20%;
+    font-size: 0.875rem;
+    position: relative;
+    border: none;
+    top: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 20%;
 }
 
 .menu a {
-  color: inherit;
+    color: inherit;
 }
-
-
 
 .title {
-  margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 1rem;
 }
-
-
-
-
 
 .highlight {
-  color: #73ABAD;
-  text-shadow: 0 0 4px #73ABAD; 
+    color: #73abad;
+    text-shadow: 0 0 4px #73abad;
+}
+.terminal-text__prompt:before {
+    content: "$ ";
+    color: #58af69;
 }
 
+b {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+.cursor:before {
+    content: "█";
+    /* text-decoration: blink;
+    animation: blinker 1s linear infinite; */
+}
 
-
-
-
-
-
-
+.cursor {
+    font-size: 12px;
+    color: #73abad;
+    background-color: #73abad;
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    60% {
+        opacity: 0;
+    }
+}
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 12px;
-  margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    margin-top: 24px;
 }
