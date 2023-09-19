@@ -1,22 +1,21 @@
 .main-container {
-    padding: 15px 20px;
-    min-width: 350px;
+    width: 90vw;
+    margin: 1rem auto;
 }
 
 .terminal-bar {
-    height: 55px;
-
     border: 1px solid;
-    padding: 0 0.5rem;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom: none;
 }
 
-.terminal-body {
+.terminal-bar__body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
+    /* border: 1px solid red; */
 }
 
 .terminal-icon {
@@ -26,19 +25,18 @@
 .bar-buttons {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .bar-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px;
-    margin-right: 0.25rem;
-    font-size: 0.65rem;
+    padding: 0.5rem;
+    font-size: 8px;
     height: 16px;
     width: 16px;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 .bar-button:hover {
     cursor: pointer;
@@ -51,14 +49,12 @@
 }
 
 .menu {
-    font-size: 0.875rem;
-    position: relative;
-    border: none;
-    top: 8px;
+    margin-top: 1rem;
     display: flex;
-    gap: 12px;
+    gap: 1rem;
     align-items: center;
-    width: 20%;
+    padding: 0.25rem;
+    /* border: 1px solid red; */
 }
 
 .menu a {
@@ -66,21 +62,20 @@
 }
 
 .title {
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1.25rem 0.5rem;
 }
 
 .highlight {
     color: #73abad;
     text-shadow: 0 0 4px #73abad;
 }
+
 .terminal-text__prompt:before {
     content: "$ ";
     color: #58af69;
 }
-
-b {
-    font-weight: bold;
-    text-decoration: underline;
+.terminal-text__prompt {
+    margin-left: 0.5rem;
 }
 
 .cursor:before {
@@ -88,12 +83,12 @@ b {
 }
 
 .cursor {
-    font-size: 12px;
+    font-size: 13px;
     color: #73abad;
     background-color: #73abad;
     position: relative;
     opacity: 1;
-    height: 1.5em;
+    height: 20px;
     width: 10px;
     max-width: 10px;
     transform: translateY(4px);
@@ -113,7 +108,38 @@ b {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    padding: 12px;
-    margin-top: 24px;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+.footer__links {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 690px) {
+    .main-container {
+        width: 90vw;
+    }
+
+    pre {
+        font-size: 13px;
+    }
+    .bar-title--hide {
+        visibility: hidden;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    pre {
+        font-size: 9px;
+    }
+    .menu {
+        padding: 0;
+    }
 }

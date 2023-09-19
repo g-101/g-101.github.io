@@ -1,16 +1,19 @@
 /* reset */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
 }
 
 :root {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: 	#00101a;
+    background-color: #00101a;
     color: #09b4df;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -18,25 +21,35 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
-
-    
-    
 }
 
 body {
     min-height: 100vh;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
 }
 
@@ -50,33 +63,34 @@ a {
 /* fim do reset */
 
 a {
-    color: #9C8394;
-}  
+    color: #9c8394;
+}
 a:hover {
-    background: #73ABAD;
+    background: #73abad;
     color: #211830;
 }
 a:focus {
     outline: 0;
 }
 
-
 pre {
-    
-    margin: 16px 0 0 -80px;
+    margin: 2rem 0 0 0;
 }
 
 main {
     border: 1px solid;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 h1 {
     font-size: 1.5rem;
-    
 }
 
 footer {
     text-align: center;
-    
+}
+
+b {
+    font-weight: bold;
+    text-decoration: underline;
 }
