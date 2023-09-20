@@ -19,7 +19,7 @@
 }
 
 .terminal-icon {
-    width: 24px;
+    width: 26px;
 }
 
 .bar-buttons {
@@ -122,9 +122,9 @@
         width: 90vw;
     }
 
-    pre {
+    /* pre {
         font-size: 13px;
-    }
+    } */
     .bar-title--hide {
         visibility: hidden;
     }
@@ -135,11 +135,11 @@
     }
 }
 
-@media screen and (max-width: 490px) {
+/* @media screen and (max-width: 490px) {
     pre {
         font-size: 9px;
     }
     .menu {
         padding: 0;
     }
-}
+} */
