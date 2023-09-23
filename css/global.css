@@ -78,7 +78,7 @@ pre {
     font-size: max(0.4rem, 1.5vmin);
 }
 
-main {
+.main {
     border: 1px solid;
     min-height: 70vh;
 }
@@ -94,4 +94,11 @@ footer {
 b {
     font-weight: bold;
     text-decoration: underline;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #09b4df;
+    color: #fffdfa;
 }
