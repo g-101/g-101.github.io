@@ -15,7 +15,7 @@ let index = 0;
 let row = 0;
 let arrLen = texts[0].length;
 let textPosition = 0;
-let speed = 60;
+let speed = 50;
 
 function typer() {
     content = " ";
@@ -31,7 +31,7 @@ function typer() {
         index++;
         if (index !== texts.length) {
             arrLen = texts[index].length;
-            setTimeout("typer()", 300);
+            setTimeout("typer()", 200);
         }
     } else {
         setTimeout("typer()", speed);
