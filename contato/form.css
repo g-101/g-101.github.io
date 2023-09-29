@@ -41,8 +41,8 @@ input:focus,
 textarea:hover,
 textarea:focus {
     outline: none;
-    border-color: #73abad;
-    box-shadow: 0 0 4px #73abad;
+    border-color: #09b4df;
+    box-shadow: 0 0 4px #09b4df;
 }
 
 label {
@@ -67,7 +67,7 @@ button {
 button:hover,
 button:focus {
     outline: none;
-    background: #09b4df;
+    background: #73abad;
 }
 
 button:disabled {
