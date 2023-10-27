@@ -1,8 +1,7 @@
 const texts = [
-    "<span class='terminal-text__prompt'>Hello world! Bem vindo ao meu porfólio. Meu nome é <span class='highlight'>Genesis</span>.</span>",
-    "<span class='terminal-text__prompt'>Apenas uma entusiata de tecnologia da informação, que gosta de resolver problemas de forma criativa!</span>",
-    "<span class='terminal-text__prompt'>Adoro jogos que envolvem estrategia e resolução de puzzles.</span>",
-    "<span class='terminal-text__prompt'>No momento estudo a linguagem C e como funciona o sistema operacional.</span>",
+    "<span class='terminal-text__prompt'>Hello world! Bem vinda(o) ao meu portfólio. Meu nome é <span class='highlight'>Genesis</span>.</span>",
+    "<span class='terminal-text__prompt'>Apenas uma entusiata que adora programar e resolver problemas de forma criativa!</span>",
+    "<span class='terminal-text__prompt'>No momento, sou aluna no curso profissionalizante da Cisco focado nas certificações CCNA e CyberOps Associate.</span>",
     "<span class='terminal-text__prompt'>---------------------------------</span>",
     "<span class='terminal-text__prompt'>Veja meus <a href='/projetos' target='_blank'>projetos</a> e <a href='https://medium.com/@g101' target='_blank'>blog</a>.",
     "<span class='terminal-text__prompt'>Você pode entrar em contato comigo no <a href='https://www.linkedin.com/in/genesislima101/' target='_blank'>linkedin</a>.",
